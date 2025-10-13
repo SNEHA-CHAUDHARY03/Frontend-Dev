@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Question 2: Product Catalog Page using a table -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Catalog</title>
+  </head>
+  <body>
+    <h1>Product Catalog</h1>
+    <!-- Products table: Product Name, Description, Price, Availability -->
+    <table border="1">
+      <caption>Available Products</caption>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img src="https://www.sony.co.in/headphones" alt="Product A image" />
+            <br />Product A
+          </td>
+          <td>Compact wireless headphones with noise isolation.</td>
+          <td>$49.99</td>
+          <td>In Stock</td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <img src="https://via.placeholder.com/80" alt="Product B image" />
+            <br />Bundle Pack
+          </td>
+          <td>Starter bundle including charger and case.</td>
+          <td>$79.99</td>
+          <td>Limited Stock</td>
+        </tr>
+        <tr>
+          <td colspan="2">Special offer: Buy one get 10% off on accessories.</td>
+          <td>Out of Stock</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

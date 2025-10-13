@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Question 10: Dropdown-based Selection Page -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dropdown Selection</title>
+  </head>
+  <body>
+    <h1>Choose Your Preferences</h1>
+    <form>
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="usa">USA</option>
+        <option value="india" selected>India</option>
+        <option value="uk">United Kingdom</option>
+      </select>
+      <br />
+
+      <label for="state">State:</label>
+      <select id="state" name="state">
+        <option value="state1">State 1</option>
+        <option value="state2" selected>State 2</option>
+      </select>
+      <br />
+
+      <label for="city">City:</label>
+      <select id="city" name="city">
+        <option value="city1">City 1</option>
+        <option value="city2" selected>City 2</option>
+      </select>
+      <br />
+
+      <label for="place">Favorite Tourist Place:</label>
+      <select id="place" name="place">
+        <option value="place1">Place 1</option>
+        <option value="place2" selected>Place 2</option>
+      </select>
+    </form>
+
+    <p>Your selection: Country - India; State - State 2; City - City 2; Favorite Place - Place 2</p>
+  </body>
+</html>
