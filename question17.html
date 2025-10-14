@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!-- Question 17: form.html loads result.html in an iframe after submit (HTML-only example) -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Question17 - Form (Parent)</title>
+  </head>
+  <body>
+    <h1>Form Page</h1>
+    <form target="resultFrame" action="question17_result.html" method="get">
+      <label for="textinput">Enter text:</label>
+      <input type="text" id="textinput" name="textinput">
+      <button type="submit">Submit</button>
+    </form>
+    <iframe name="resultFrame" width="100%" height="100" title="Result Frame"></iframe>
+  </body>
+</html>

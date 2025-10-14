@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- Question 4: Frameset layout using <frameset> and <frame> tags -->
+<!-- Note: <frameset> is obsolete in HTML5 but included here per exercise requirements -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Question 4 - Frameset Example</title>
+  </head>
+
+  <!-- Use frameset instead of body for this legacy layout -->
+  <frameset rows="30%,70%">
+    <!-- Top frame: Navigation links -->
+    <frame 
+      srcdoc="<p><a href='#' target='bottomFrame'>Home</a> | <a href='#' target='bottomFrame'>About</a> | <a href='#' target='bottomFrame'>Contact</a></p>" 
+      name="topFrame"
+    >
+
+    <!-- Bottom frame: Display message -->
+    <frame 
+      srcdoc="<p>Welcome to My Website</p>" 
+      name="bottomFrame"
+    >
+  </frameset>
+</html>

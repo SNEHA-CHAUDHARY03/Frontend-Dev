@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- Question 8: Feedback Form with textarea, radio buttons, and POST action -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Question8 - Feedback Form</title>
+  </head>
+  <body>
+    <h1>Feedback</h1>
+    <form method="post" action="#">
+      <label for="feedback">Your feedback:</label>
+      <br>
+      <textarea id="feedback" name="feedback" rows="6" cols="40"></textarea>
+      <br>
+      <p>Rate your experience:</p>
+      <input type="radio" id="good" name="rating" value="good">
+      <label for="good">Good</label>
+      <input type="radio" id="average" name="rating" value="average">
+      <label for="average">Average</label>
+      <input type="radio" id="poor" name="rating" value="poor">
+      <label for="poor">Poor</label>
+      <br>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </body>
+</html>

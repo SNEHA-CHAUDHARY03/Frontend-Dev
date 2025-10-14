@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!-- Question 9: File Upload Form accepting only .jpg and .png -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Question9 - File Upload</title>
+  </head>
+  <body>
+    <h1>Upload an Image</h1>
+    <form enctype="multipart/form-data">
+      <input type="file" name="image" accept=".jpg,.jpeg,.png" required>
+      <br>
+      <p>Allowed file types: .jpg, .jpeg, .png (images only)</p>
+      <button type="submit">Upload</button>
+    </form>
+  </body>
+</html>
