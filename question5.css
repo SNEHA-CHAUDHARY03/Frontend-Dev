@@ -1,0 +1,9 @@
+/* Question5 CSS: Pricing plans using flexbox, equal height, hover transition */
+body{font-family:Arial, Helvetica, sans-serif;margin:0;padding:2rem;background:#f3f6f9}
+.plans{display:flex;gap:1rem}
+.plan{flex:1;background:#fff;padding:1.5rem;border:1px solid #e0e6ee;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;transition:transform .2s ease,background .2s}
+.plan:hover{transform:scale(1.03);background:#f0f8ff}
+.popular{border:2px solid #ff7f50;background:#fff7f0}
+.price{font-size:2rem;margin:1rem 0}
+.btn{text-decoration:none;padding:0.5rem 1rem;border-radius:4px;background:#012a4a;color:#fff}
+@media(max-width:700px){.plans{flex-direction:column}}

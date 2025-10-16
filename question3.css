@@ -1,0 +1,8 @@
+/* Question3 CSS: 3-column responsive team cards using flexbox
+   - Highlights lead card and adapts to single column below 600px */
+body{font-family:Arial, Helvetica, sans-serif;margin:0;padding:2rem;background:#fafafa}
+.team{display:flex;gap:1rem;justify-content:space-between}
+.card{flex:1;padding:1rem;border:1px solid #ddd;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08)}
+.card h2{margin:0 0 0.25rem 0}
+.lead{background:#fff7e6;border:2px solid #ffb400}
+@media (max-width:600px){.team{flex-direction:column}}

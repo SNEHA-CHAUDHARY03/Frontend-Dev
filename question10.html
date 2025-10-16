@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Question 10: Complete webpage demonstrating box model and positioning (HTML) -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Question10 - Complete Layout</title>
+    <link rel="stylesheet" href="question10.css" />
+  </head>
+  <body>
+    <header class="topnav">
+      <h1>Company</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Welcome to Our Site</h2>
+    </section>
+
+    <main>
+      <section id="about" class="two-col">
+        <div class="text">About text content goes here. Demonstrates two columns layout.</div>
+        <div class="image"><img src="https://via.placeholder.com/300" alt="About image"></div>
+      </section>
+
+      <section id="services" class="services">
+        <div class="service">Service 1</div>
+        <div class="service">Service 2</div>
+        <div class="service">Service 3</div>
+      </section>
+
+      <section id="contact" class="contact">
+        <form>
+          <label>Name<input type="text" required></label>
+          <label>Email<input type="email" required></label>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Company</p>
+    </footer>
+  </body>
+</html>
