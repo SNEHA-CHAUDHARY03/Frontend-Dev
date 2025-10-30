@@ -1,0 +1,66 @@
+/* CSS for Height and Width Practice Layout */
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* Container using Flexbox for centering */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Common box styles */
+.box {
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Box with pixel units */
+.px-box {
+    width: 300px;
+    height: 200px;
+    background-color: #ffb6b6;
+    max-width: 90%;
+}
+
+/* Box with percentage units */
+.percent-box {
+    width: 40%;
+    min-height: 250px;
+    background-color: #b6ffc0;
+    overflow: auto;
+}
+
+/* Box with viewport units */
+.vh-box {
+    width: 50vw;
+    height: 30vh;
+    background-color: #b6dbff;
+    max-width: 500px;
+}
+
+/* Header and Footer styles */
+header, footer {
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .percent-box {
+        width: 80%;
+    }
+    
+    .vh-box {
+        width: 80vw;
+    }
+}

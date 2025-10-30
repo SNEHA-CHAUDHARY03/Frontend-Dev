@@ -1,0 +1,90 @@
+/* CSS for Box Model Exploration */
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.box-model-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+/* Box Model Demonstration */
+.box-model {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Content Box */
+.content {
+    width: 100px;
+    height: 100px;
+    background-color: #f8c291;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Padding Layer */
+.padding {
+    background-color: #63cdda;
+    padding: 20px;
+}
+
+/* Border Layer */
+.border {
+    background-color: #cf6a87;
+    border: 10px solid #786fa6;
+    padding: 20px;
+}
+
+/* Margin Layer */
+.margin {
+    background-color: #778beb;
+    padding: 20px;
+}
+
+/* Border Box Model */
+.border-box .content,
+.border-box .padding,
+.border-box .border,
+.border-box .margin {
+    box-sizing: border-box;
+}
+
+/* Descriptions */
+.descriptions {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.descriptions p {
+    margin: 0.5rem 0;
+}
+
+.descriptions strong {
+    color: #2c3e50;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #666;
+}

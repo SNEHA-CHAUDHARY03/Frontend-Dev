@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exploration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Box Model</h1>
+    </header>
+
+    <main>
+        <div class="box-model-container">
+            <div class="box-model">
+                <div class="margin">
+                    Margin
+                    <div class="border">
+                        Border
+                        <div class="padding">
+                            Padding
+                            <div class="content">
+                                Content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-model border-box">
+                <div class="margin">
+                    Margin (border-box)
+                    <div class="border">
+                        Border
+                        <div class="padding">
+                            Padding
+                            <div class="content">
+                                Content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="descriptions">
+            <p><strong>Content:</strong> The actual content of the element</p>
+            <p><strong>Padding:</strong> Clear space around the content</p>
+            <p><strong>Border:</strong> Border around the padding</p>
+            <p><strong>Margin:</strong> Clear space around the border</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Box Model Demonstration</p>
+    </footer>
+</body>
+</html>

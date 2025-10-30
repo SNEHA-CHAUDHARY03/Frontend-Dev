@@ -1,0 +1,118 @@
+/* CSS for Advanced Selectors Demonstration */
+
+/* Basic Setup */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Attribute Selectors */
+/* Targets all text inputs */
+input[type="text"] {
+    border: 2px solid #007bff;
+    padding: 8px;
+    margin: 5px;
+}
+
+/* Targets all email inputs */
+input[type="email"] {
+    border: 2px solid #28a745;
+    padding: 8px;
+    margin: 5px;
+}
+
+/* Targets external links */
+a[href^="https"] {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+/* Pseudo-classes */
+/* Hover effect on inputs */
+input:hover {
+    background-color: #f8f9fa;
+}
+
+/* Focus effect on inputs */
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* nth-child selector */
+.demo-list li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.demo-list li:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+/* First and last child */
+.demo-list li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.demo-list li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Pseudo-elements */
+.special-content::before {
+    content: "🌟 ";
+}
+
+.special-content::after {
+    content: " 🌟";
+}
+
+/* Combinators */
+/* Direct child */
+.form-section > input {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Adjacent sibling */
+input + input {
+    margin-top: 10px;
+}
+
+/* General sibling */
+input ~ a {
+    display: block;
+    margin-top: 15px;
+}
+
+/* List Styling */
+.demo-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.demo-list li {
+    padding: 10px;
+    margin: 2px 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Section Spacing */
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+}
