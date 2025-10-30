@@ -1,0 +1,154 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+/* Header styles using Flexbox */
+header {
+    background-color: #333;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Main content using Grid */
+.main-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Article content with Flexbox boxes */
+.main-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.animated-title {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    margin-bottom: 2rem;
+}
+
+.flex-boxes {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.box {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.widget ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.widget a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.widget a:hover {
+    color: #007bff;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    nav {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
