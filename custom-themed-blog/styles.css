@@ -1,0 +1,20 @@
+/* Custom Themed Blog Overrides
+   - Override Bootstrap CSS variables to personalize theme
+   - Use Google Font and apply to headings
+*/
+
+:root {
+  --bs-primary: #7c3aed; /* purple */
+  --bs-body-font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+body { font-family: var(--bs-body-font-family); background:#fbfbff; }
+.themed { color: var(--bs-primary); }
+.themed-card { border: 1px solid rgba(124,58,237,0.08); }
+.themed-card .card-body h2 { color: var(--bs-primary); }
+
+/* Buttons and other components will use the overridden --bs-primary */
+
+@media (max-width: 576px) {
+  .themed-card img { height: 180px; object-fit: cover; }
+}

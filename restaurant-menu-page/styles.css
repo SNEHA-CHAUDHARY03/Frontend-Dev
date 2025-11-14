@@ -1,0 +1,10 @@
+/* Restaurant Menu Page styles
+   - Uses Bootstrap table and list-group components
+*/
+
+figure .figure-img { object-fit:cover; }
+.table thead th { background:#f8f9fa; }
+
+@media (max-width: 767px) {
+  .figure { margin-top: 1rem; }
+}
