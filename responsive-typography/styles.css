@@ -1,0 +1,18 @@
+/* Responsive Typography using clamp() and relative units
+   - h1 and p scale between min and max sizes
+*/
+
+* { box-sizing: border-box; }
+body { margin:0; font-family: Georgia, 'Times New Roman', serif; background:#f8fafb; color:#1b2430; }
+
+.typography { max-width:900px; margin:6vh auto; text-align:center; padding:1rem; }
+
+h1 { font-size: clamp(1.5rem, 4vw, 3rem); margin-bottom:1rem; }
+
+p { font-size: clamp(1rem, 2vw, 1.5rem); line-height:1.6; color:#334155; margin:0 auto; max-width:720px; }
+
+/* Below 700px adjust line-height and spacing for readability */
+@media (max-width:700px) {
+  p { line-height:1.8; margin:0 1rem; }
+  .typography { margin-top:3vh; }
+}

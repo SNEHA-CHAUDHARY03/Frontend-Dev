@@ -1,0 +1,19 @@
+/* Responsive CSS Cheat Sheet
+   - Grid layout converts to stacked rows below 700px
+*/
+
+* { box-sizing: border-box; }
+body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#f8fbff; color:#122028; }
+header { text-align:center; padding:1rem; }
+
+.grid { display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); max-width:1100px; margin:1rem auto; padding:1rem; }
+.topic { background:#fff; padding:1rem; border-radius:8px; box-shadow:0 6px 18px rgba(13,38,59,0.05); transition: transform 0.18s ease, background 0.18s ease; }
+.topic:hover { transform: translateY(-6px); background: linear-gradient(180deg,#f6fbff,#eef6ff); }
+
+/* Small screens: stacked rows with headings acting as keys */
+@media (max-width:700px) {
+  .grid { grid-template-columns: 1fr; }
+  .topic h2 { font-size:1rem; margin-bottom:0.25rem; }
+}
+
+footer { text-align:center; padding:1rem; color:#666; }

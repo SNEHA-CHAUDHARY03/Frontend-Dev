@@ -1,0 +1,25 @@
+/* Responsive Cards using media queries
+   - Desktop: 4 columns
+   - Tablet (<=900px): 2 columns
+   - Mobile (<=600px): 1 column
+*/
+
+* { box-sizing: border-box; }
+body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#fbfdff; color:#1b2430; }
+header { text-align:center; padding:1rem; }
+
+.cards { display:flex; gap:1rem; padding:1rem; justify-content:center; flex-wrap:wrap; max-width:1200px; margin:0 auto; }
+.card { background:#fff; padding:1.25rem; border-radius:8px; box-shadow:0 6px 18px rgba(13,38,59,0.06); flex: 1 1 22%; text-align:center; transition: background-color 0.25s ease; }
+.card:hover { background:#eef6ff; }
+
+/* Tablet: 2 columns */
+@media (max-width:900px) {
+  .card { flex: 1 1 45%; }
+}
+
+/* Mobile: 1 column */
+@media (max-width:600px) {
+  .card { flex: 1 1 100%; }
+}
+
+footer { text-align:center; padding:1rem; color:#666; }

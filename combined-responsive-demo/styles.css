@@ -1,0 +1,27 @@
+/* Combined Responsive Web Demo
+   - Header/nav (Flexbox)
+   - Main grid with three sections, stacks below 700px
+   - Simple fade-in animation
+*/
+
+* { box-sizing: border-box; }
+body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#f7fbff; color:#102028; }
+.top { display:flex; justify-content:space-between; align-items:center; padding:1rem; background:#fff; box-shadow:0 4px 10px rgba(0,0,0,0.04); }
+.main-nav a { margin-left:1rem; color:#0b67d0; text-decoration:none; }
+
+.grid { display:grid; grid-template-columns: 1fr 1fr 320px; gap:1rem; max-width:1200px; margin:1.25rem auto; padding:0 1rem; align-items:start; animation: fadeIn 0.6s ease; }
+
+.gallery-preview img { width:100%; border-radius:8px; box-shadow:0 6px 18px rgba(13,38,59,0.06); margin-bottom:0.5rem; }
+.thumbs img { display:block; margin-bottom:0.5rem; }
+
+.explain, .cheats { background:#fff; padding:1rem; border-radius:8px; box-shadow:0 6px 18px rgba(13,38,59,0.06); }
+
+@keyframes fadeIn { from { opacity:0; transform: translateY(6px);} to { opacity:1; transform:none; } }
+
+/* Stack vertically below 700px */
+@media (max-width:700px) {
+  .grid { grid-template-columns: 1fr; }
+  .main-nav { display:none; }
+}
+
+footer.foot { text-align:center; padding:1rem; color:#666; }

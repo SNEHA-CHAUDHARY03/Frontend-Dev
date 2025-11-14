@@ -1,0 +1,46 @@
+/* Responsive Image Filter Gallery
+   - Uses CSS Grid with auto-fit minmax
+   - Applies different filters per image and removes them on hover
+*/
+
+:root {
+  --gap: 1rem;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background:#f6f9fb; color:#17202a; }
+header { text-align:center; padding:1.25rem 1rem; }
+.lead { margin-top:0.25rem; color:#4b5563; }
+
+.gallery {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width:1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+figure { margin:0; background: #fff; border-radius:8px; overflow:hidden; box-shadow:0 6px 18px rgba(13,38,59,0.06); }
+figure img { display:block; width:100%; height:auto; transition: filter 0.35s ease, transform 0.35s ease; }
+figcaption { padding:0.6rem; text-align:center; font-size:0.95rem; background:rgba(255,255,255,0.9); }
+
+/* Filters */n
+.filter-blur { filter: blur(2px); }
+.filter-grayscale { filter: grayscale(100%); }
+.filter-sepia { filter: sepia(70%); }
+.filter-brightness { filter: brightness(0.7); }
+.filter-contrast { filter: contrast(60%); }
+.filter-hue { filter: hue-rotate(90deg); }
+
+/* Remove filter and slightly scale on hover */
+figure:hover img, figure:focus-within img {
+  filter: none !important;
+  transform: scale(1.03);
+}
+
+/* Responsive: stack in one column below 600px */
+@media (max-width:600px) {
+  .gallery { grid-template-columns: 1fr; }
+  header { padding:1rem; }
+}

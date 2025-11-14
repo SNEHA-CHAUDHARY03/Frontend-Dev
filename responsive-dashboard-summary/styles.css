@@ -1,0 +1,28 @@
+/* Responsive Dashboard Summary
+   - Grid layout with sidebar and main content
+   - Sidebar moves to top on narrow screens (<750px)
+   - Cards scale on hover and simple load animation
+*/
+
+* { box-sizing: border-box; }
+body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#f6fafb; color:#112028; }
+.app { max-width:1200px; margin:0 auto; }
+.dash-header { background:#fff; padding:1rem; text-align:center; font-weight:700; box-shadow:0 4px 10px rgba(0,0,0,0.04); }
+.layout { display:grid; grid-template-columns: 220px 1fr; gap:1rem; padding:1rem; align-items:start; }
+.sidebar { background:#fff; padding:1rem; border-radius:8px; box-shadow:0 6px 18px rgba(13,38,59,0.06); }
+.sidebar nav a { display:block; padding:0.5rem 0; color:#0b67d0; text-decoration:none; }
+.content { background:transparent; }
+.cards { display:grid; grid-template-columns: repeat(2, 1fr); gap:1rem; }
+.card { background:#fff; padding:1rem; border-radius:8px; box-shadow:0 8px 22px rgba(13,38,59,0.06); transition: transform 0.18s ease, box-shadow 0.18s ease; animation: loadIn 0.6s ease; }
+.card:hover { transform: scale(1.03); box-shadow:0 16px 38px rgba(13,38,59,0.12); }
+
+@keyframes loadIn { from { opacity:0; transform: translateY(8px);} to { opacity:1; transform:none; } }
+
+/* Responsive: sidebar moves to top and content stacks below 750px */
+@media (max-width:750px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { order: -1; }
+  .cards { grid-template-columns: 1fr; }
+}
+
+.dash-footer { text-align:center; padding:1rem; color:#666; }

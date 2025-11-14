@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Responsive Design Principles Summary</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><h1>Responsive Principles</h1></header>
+  <main class="principles">
+    <section class="box">
+      <h2>Fluid Layouts</h2>
+      <p>Layouts that adapt to container width using % and flexible units.</p>
+      <pre><code>width: 100%; max-width: 1200px;</code></pre>
+    </section>
+    <section class="box">
+      <h2>Flexible Media</h2>
+      <p>Images and media scale with container using max-width:100%.</p>
+      <pre><code>img { max-width:100%; height:auto; }</code></pre>
+    </section>
+    <section class="box">
+      <h2>Breakpoints</h2>
+      <p>Use media queries to adjust layout at specific widths.</p>
+      <pre><code>@media (max-width: 600px) { ... }</code></pre>
+    </section>
+  </main>
+</body>
+</html>
