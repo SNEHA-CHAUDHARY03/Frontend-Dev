@@ -1,0 +1,46 @@
+/* Image Showcase with overlay, scale and responsive grid */
+
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f8fafc; }
+header { text-align: center; padding: 1rem 0; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(13, 38, 59, 0.08);
+  margin: 0;
+  background: #fff;
+}
+
+figure img { display: block; width: 100%; height: auto; transition: transform 0.3s ease; }
+
+/* overlay using pseudo-element */
+figure::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.18);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+figure:hover img { transform: scale(1.1); }
+figure:hover::after { opacity: 1; }
+
+figcaption { padding: 0.75rem; font-size: 0.95rem; text-align: center; background: rgba(255,255,255,0.9); }
+
+footer { text-align: center; padding: 1rem 0; color: #666; }
+
+/* Responsive: stack to single column below 700px */
+@media (max-width: 700px) {
+  .gallery { grid-template-columns: 1fr; padding: 1rem; }
+}

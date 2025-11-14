@@ -1,0 +1,35 @@
+/* Selectors Practice CSS
+   Demonstrates element, class, id, attribute selectors, and combinators
+*/
+
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #fbfcfe; }
+header { text-align: center; padding: 1rem 0; }
+
+.selectors { max-width: 900px; margin: 1.2rem auto; background: #fff; padding: 1.25rem; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.04); }
+
+/* Element selector: styles all <p> elements */
+p { color: #2b3540; line-height: 1.5; }
+
+/* Class selector: targets .highlight */
+.highlight { background: #fff9c4; padding: 0.4rem; border-radius: 4px; }
+
+/* ID selector: targets element with id 'unique' */
+#unique { color: #0b67d0; font-weight: 600; }
+
+/* Attribute selector: links starting with https */
+a[href^="https"] { color: #c74444; text-decoration: none; }
+
+/* Combinator examples */
+/* Direct child selector: .parent > .child */
+.parent > .child { padding: 0.5rem; background: #e8f6ff; border-radius: 4px; margin: 0.5rem 0; }
+
+/* Adjacent sibling: div + div */
+div + div { border-left: 3px solid #eaeaea; padding-left: 0.6rem; }
+
+/* Descendant selector: .parent .descendant */
+.parent .descendant { font-style: italic; margin-top: 0.6rem; }
+
+/* General sibling: p ~ a (applies to following siblings) */
+.parent p ~ p { color: #4a4a4a; }
+
+footer { text-align: center; padding: 1rem 0; color: #666; }

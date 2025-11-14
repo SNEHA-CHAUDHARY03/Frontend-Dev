@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CSS Selectors Practice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Selectors Practice</h1>
+  </header>
+  <main>
+    <section class="selectors">
+      <h2>Element selector</h2>
+      <p>This paragraph is styled by element selector (<code>p</code>).</p>
+
+      <h2>Class selector</h2>
+      <p class="highlight">This paragraph uses a class selector (.highlight).</p>
+
+      <h2>ID selector</h2>
+      <p id="unique">This paragraph uses an ID selector (#unique).</p>
+
+      <h2>Attribute selector</h2>
+      <a href="https://example.com">External link (href^="https")</a>
+
+      <h2>Combinators</h2>
+      <div class="parent">
+        <p>Direct child below:</p>
+        <div class="child">I am a direct child (parent > .child)</div>
+        <div class="child-sibling">I follow a sibling (div + div)</div>
+        <p class="descendant">I am a descendant (parent .descendant)</p>
+        <p class="general">Another paragraph ~ a following sibling selector target</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Practice CSS selectors with element, class, ID, attribute and combinators</p>
+  </footer>
+</body>
+</html>

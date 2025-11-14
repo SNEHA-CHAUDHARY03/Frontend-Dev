@@ -1,0 +1,23 @@
+/* Animations Demo */
+
+body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#fbfcff; }
+header { text-align:center; padding:1rem 0; }
+
+.center { display:flex; justify-content:center; align-items:center; gap:2rem; height:70vh; flex-wrap:wrap; }
+
+/* Moving box: left-right */
+.anim-box { padding:0.8rem 1rem; background:#fff; border-radius:8px; box-shadow:0 3px 8px rgba(0,0,0,0.06); animation: slide 3s ease-in-out infinite alternate; }
+@keyframes slide { from { transform: translateX(-10px);} to { transform: translateX(10px);} }
+
+/* Bouncing ball */
+.anim-ball { width:60px; height:60px; background: linear-gradient(180deg,#ffb6b6,#ff6b6b); border-radius:50%; box-shadow:0 6px 16px rgba(255,100,100,0.18); animation: bounce 1.2s cubic-bezier(.28,.84,.42,1) infinite; animation-delay:0.15s; }
+@keyframes bounce { 0% { transform: translateY(0);} 50% { transform: translateY(-40px);} 100% { transform: translateY(0);} }
+
+/* Color-changing text */
+.anim-text { font-weight:700; font-size:1.1rem; animation: colorShift 4s ease-in-out infinite alternate; animation-direction: alternate-reverse; }
+@keyframes colorShift { 0% { color:#2c3e50;} 50% { color:#e67e22;} 100% { color:#27ae60;} }
+
+footer { text-align:center; padding:1rem 0; color:#666; }
+
+/* Responsive small screens */
+@media (max-width:600px) { .center { height:auto; padding:2rem 1rem; } }

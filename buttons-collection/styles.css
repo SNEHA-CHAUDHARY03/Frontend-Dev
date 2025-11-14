@@ -1,0 +1,42 @@
+/* Styled Button Collection */
+
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f6f8fb; }
+header { text-align: center; padding: 1rem 0; }
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  box-shadow: 0 3px 8px rgba(11, 26, 46, 0.08);
+  font-weight: 600;
+}
+
+/* Primary */
+.btn.primary { background: #0b67d0; color: #fff; }
+.btn.primary:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(11,103,208,0.18); }
+.btn.primary:active { transform: translateY(0); }
+.btn.primary:focus { outline: none; box-shadow: 0 0 0 4px rgba(11,103,208,0.12); }
+
+/* Secondary */
+.btn.secondary { background: #e0e7ff; color: #0b3a8a; }
+.btn.secondary:hover { transform: translateY(-3px); }
+
+/* Outline */
+.btn.outline { background: transparent; border: 2px solid #0b67d0; color: #0b67d0; }
+.btn.outline:hover { background: rgba(11,103,208,0.06); }
+
+/* Disabled */
+.btn.disabled { background: #dfe7ef; color: #9aa9bd; cursor: not-allowed; box-shadow: none; }
+.btn.disabled:focus { outline: none; }
+
+footer { text-align: center; padding: 1rem 0; color: #666; }
