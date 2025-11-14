@@ -1,0 +1,10 @@
+/* Pricing Plans - highlight Pro plan and add hover shadow */
+
+.plan { border-radius: 12px; }
+.plan.transition { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.plan.transition:hover { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(0,0,0,0.12); }
+
+/* Pro highlighted with Bootstrap utility classes overridden */
+.highlighted { background: var(--bs-primary); }
+
+@media (max-width: 767px) { .plan { text-align: center; } }

@@ -1,0 +1,7 @@
+/* Task Tracker - small styling for badges */
+
+.list-group-item { font-weight: 600; }
+
+@media (max-width:576px) {
+  .list-group-item { font-size: 0.95rem; }
+}

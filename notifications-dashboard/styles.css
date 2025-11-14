@@ -1,0 +1,7 @@
+/* Notifications Dashboard - small custom styles */
+
+.summary-well { box-shadow: 0 2px 8px rgba(13,38,59,0.04); }
+
+@media (max-width:576px) {
+  main.container { padding: 0 0.5rem; }
+}

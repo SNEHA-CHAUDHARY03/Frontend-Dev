@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task Tracker with Badges</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="container my-5">
+      <header class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="mb-0">Tasks</h4>
+        <!-- Badge counter in header -->
+        <span class="badge bg-primary">3 Pending</span>
+      </header>
+
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Design landing page
+          <span class="badge bg-danger rounded-pill">High</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Write unit tests
+          <span class="badge bg-warning text-dark rounded-pill">Medium</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Update docs
+          <span class="badge bg-success rounded-pill">Low</span>
+        </li>
+      </ul>
+
+      <div class="mt-3 d-flex justify-content-between">
+        <button class="btn btn-outline-secondary">View All</button>
+        <!-- Completed button with embedded badge -->
+        <button class="btn btn-success">Completed <span class="badge bg-white text-success ms-2">5</span></button>
+      </div>
+    </main>
+
+    <footer class="text-center small py-3">© 2025 Task Tracker</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
