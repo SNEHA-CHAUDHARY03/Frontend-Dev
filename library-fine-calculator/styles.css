@@ -1,0 +1,6 @@
+/* Library Fine Calculator Styles */
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f3e5f5; color: #4a148c; }
+.container { max-width: 600px; margin: 3rem auto; padding: 2rem; background: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+h1 { text-align: center; color: #7b1fa2; }
+.info { text-align: center; color: #7f8c8d; font-size: 0.95rem; }

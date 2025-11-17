@@ -1,0 +1,6 @@
+/* E-Commerce Delivery Estimator Styles */
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f5f7fa; color: #2c3e50; }
+.container { max-width: 600px; margin: 3rem auto; padding: 2rem; background: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+h1 { text-align: center; color: #0b67d0; }
+.info { text-align: center; color: #7f8c8d; font-size: 0.95rem; }

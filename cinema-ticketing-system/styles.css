@@ -1,0 +1,6 @@
+/* Cinema Ticketing System Styles */
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #1a1a1a; color: #fff; }
+.container { max-width: 600px; margin: 3rem auto; padding: 2rem; background: #2a2a2a; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+h1 { text-align: center; color: #ff6b6b; }
+.info { text-align: center; color: #b0b0b0; font-size: 0.95rem; }

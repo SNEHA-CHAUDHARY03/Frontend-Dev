@@ -1,0 +1,6 @@
+/* Game Reward System Styles */
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #1a1a2e; color: #eee; }
+.container { max-width: 600px; margin: 3rem auto; padding: 2rem; background: #16213e; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+h1 { text-align: center; color: #00d4ff; }
+.info { text-align: center; color: #aaa; font-size: 0.95rem; }
