@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q10 - Registration Form Validation</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .invalid{border:2px solid #e74c3c}
+    .success{background:#e6ffed;padding:8px}
+    form{max-width:420px}
+    label{display:block;margin-top:8px}
+  </style>
+</head>
+<body>
+  <header><h1>Register</h1></header>
+  <main>
+    <form id="regForm" novalidate>
+      <label>Name: <input id="name" name="name"></label>
+      <label>Email: <input id="email" name="email"></label>
+      <label>Password: <input id="password" type="password" name="password"></label>
+      <button type="submit">Register</button>
+      <button type="button" id="clear">Clear</button>
+    </form>
+    <div id="result"></div>
+  </main>
+  <script src="q10_registration.js"></script>
+</body>
+</html>

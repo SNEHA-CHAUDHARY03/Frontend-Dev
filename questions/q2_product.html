@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q2 - Product Highlight</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:16px}
+    .products{display:flex;gap:12px;flex-wrap:wrap}
+    .product{width:180px;padding:10px;border:1px solid #ddd;border-radius:6px;position:relative}
+    .product.selected{outline:3px solid #ffd700}
+    .discount{background:#ffe4e1;padding:2px 6px;border-radius:4px;font-size:0.9rem}
+    .details{display:none;font-size:0.9rem}
+    .favorite{position:absolute;top:6px;right:6px;cursor:pointer}
+  </style>
+</head>
+<body>
+  <header><h1>Product Highlight</h1></header>
+  <main>
+    <section>
+      <h2>Products</h2>
+      <div class="products" id="productList">
+        <article class="product" data-price="29.99" data-discount="10" data-stock="5">
+          <span class="favorite">♡</span>
+          <h3>Widget A</h3>
+          <p class="price">$29.99</p>
+          <p class="discount-tag">10% off</p>
+          <div class="details">Color: Red<br>Size: M</div>
+        </article>
+        <article class="product" data-price="49.00" data-stock="0">
+          <span class="favorite">♡</span>
+          <h3>Gadget B</h3>
+          <p class="price">$49.00</p>
+          <div class="details">Limited edition<br>Ships in 3 days</div>
+        </article>
+        <article class="product" data-price="19.50" data-discount="5" data-stock="12">
+          <span class="favorite">♡</span>
+          <h3>Accessory C</h3>
+          <p class="price">$19.50</p>
+          <p class="discount-tag">5% off</p>
+          <div class="details">Eco-friendly material</div>
+        </article>
+        <article class="product" data-price="99.00" data-stock="2">
+          <span class="favorite">♡</span>
+          <h3>Device D</h3>
+          <p class="price">$99.00</p>
+          <div class="details">Bundle included</div>
+        </article>
+        <article class="product" data-price="12.00" data-discount="15" data-stock="0">
+          <span class="favorite">♡</span>
+          <h3>Item E</h3>
+          <p class="price">$12.00</p>
+          <p class="discount-tag">15% off</p>
+          <div class="details">Seasonal stock</div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="q2_product.js"></script>
+</body>
+</html>

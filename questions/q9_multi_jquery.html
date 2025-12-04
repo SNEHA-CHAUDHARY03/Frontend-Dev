@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q9 - Multi jQuery Widgets</title>
+  <!-- jQuery v1 for legacy widgets -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- jQuery v3 for modern widgets -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .carousel{width:300px;height:120px;border:1px solid #ccc;overflow:hidden;position:relative}
+    .slide{display:none;padding:20px}
+    .active{display:block}
+    .widget{padding:8px}
+  </style>
+</head>
+<body>
+  <header><h1>Multi-jQuery Dashboard</h1></header>
+  <main>
+    <section id="carousel" class="carousel">
+      <div class="slide">Slide 1</div>
+      <div class="slide">Slide 2</div>
+      <div class="slide">Slide 3</div>
+    </section>
+
+    <section id="notifications">
+      <button id="openModal">Open Modal</button>
+      <div id="modal" style="display:none;position:fixed;left:20%;top:20%;background:#fff;padding:20px;border:1px solid #333">Notification Modal <button id="closeModal">Close</button></div>
+    </section>
+
+    <section id="widgets">
+      <div class="widget" id="widget1">Widget 1</div>
+      <div class="widget" id="widget2">Widget 2</div>
+      <div class="widget" id="widget3">Widget 3</div>
+    </section>
+  </main>
+
+  <script src="q9_multi_jquery.js"></script>
+</body>
+</html>

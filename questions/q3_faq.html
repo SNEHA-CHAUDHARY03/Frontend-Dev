@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q3 - Interactive FAQ</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:16px}
+    .question{padding:8px;border-bottom:1px solid #eee;cursor:pointer}
+    .answer{display:none;padding:8px;background:#f9f9f9}
+    .focused{background:#fff8dc}
+  </style>
+</head>
+<body>
+  <header><h1>FAQ</h1></header>
+  <main>
+    <section id="faq">
+      <article>
+        <h3 class="question">What is your return policy?</h3>
+        <div class="answer">You can return within 30 days. <input class="ans-input" placeholder="Add a note"></div>
+      </article>
+      <article>
+        <h3 class="question">How long is shipping?</h3>
+        <div class="answer">Shipping takes 3-7 business days. <input class="ans-input" placeholder="Ask a follow-up"></div>
+      </article>
+      <article>
+        <h3 class="question">Do you offer support?</h3>
+        <div class="answer">Yes, 24/7 support via chat and email. <input class="ans-input" placeholder="Message"></div>
+      </article>
+      <article>
+        <h3 class="question">Are there volume discounts?</h3>
+        <div class="answer">Contact sales for bulk pricing. <input class="ans-input" placeholder="Request quote"></div>
+      </article>
+      <article>
+        <h3 class="question">Is the product eco-friendly?</h3>
+        <div class="answer">We use recyclable materials. <input class="ans-input" placeholder="Comment"></div>
+      </article>
+    </section>
+    <p><small>Double-click a question to collapse all answers.</small></p>
+  </main>
+
+  <script src="q3_faq.js"></script>
+</body>
+</html>

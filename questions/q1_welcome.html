@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q1 - Welcome Page Greeting</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:20px}
+    header, main, footer{margin-bottom:16px}
+    .greeting{font-size:1.5rem;color:#2b6cb0;cursor:pointer}
+    .welcome-msg{padding:10px;background:#f0f8ff;border-radius:6px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome</h1>
+    <p class="subtitle">Q1: Dynamic Greetings Demo</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="greet">
+      <h2 id="greet">Personalized Greeting</h2>
+      <p class="greeting" id="greetingText">Hello!</p>
+      <div class="welcome-msg" id="welcomeMsg">We're glad you're here. Explore the site and enjoy the content.</div>
+      <nav>
+        <button id="changeGreeting">Change Greeting</button>
+        <button id="toggleWelcome">Toggle Welcome Message</button>
+        <button id="resetGreeting">Reset Greeting</button>
+      </nav>
+    </section>
+
+    <section>
+      <h3>Examples</h3>
+      <ul>
+        <li>Personalized morning/afternoon/evening</li>
+        <li>Button switches to motivational quote</li>
+        <li>Toggle visibility of extra message</li>
+        <li>Alert when greeting clicked</li>
+        <li>Reset button to restore default logic</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>Demo using jQuery events and DOM manipulation.</small>
+  </footer>
+
+  <script src="q1_welcome.js"></script>
+</body>
+</html>
