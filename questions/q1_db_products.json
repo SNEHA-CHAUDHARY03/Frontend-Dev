@@ -1,0 +1,9 @@
+{
+  "products": [
+    { "id": 1, "name": "Red Widget", "price": 29.99, "image": "https://via.placeholder.com/80?text=Red" },
+    { "id": 2, "name": "Blue Gadget", "price": 49.5, "image": "https://via.placeholder.com/80?text=Blue" },
+    { "id": 3, "name": "Green Accessory", "price": 19.75, "image": "https://via.placeholder.com/80?text=Green" },
+    { "id": 4, "name": "Pro Device", "price": 99.0, "image": "https://via.placeholder.com/80?text=Pro" },
+    { "id": 5, "name": "Nano Item", "price": 12.0, "image": "https://via.placeholder.com/80?text=Nano" }
+  ]
+}

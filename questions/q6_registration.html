@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q6 - User Registration (Axios)</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:16px}
+    .invalid{border:1px solid #e74c3c}
+    .success{background:#e6ffed;padding:8px}
+  </style>
+</head>
+<body>
+  <h1>Register User</h1>
+  <p>JSON Server file: <code>q6_db_users.json</code> (run on port <strong>3006</strong>)</p>
+  <form id="regForm">
+    <label>Name: <input id="name" name="name"></label><br>
+    <label>Email: <input id="email" name="email"></label><br>
+    <label>Password: <input id="password" name="password" type="password"></label><br>
+    <button type="submit">Register</button>
+  </form>
+  <div id="message"></div>
+
+  <script src="q6_registration.js"></script>
+</body>
+</html>

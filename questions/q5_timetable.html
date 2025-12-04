@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q5 - College Timetable Viewer</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:16px}
+    .entry{padding:8px;border-bottom:1px solid #eee}
+  </style>
+</head>
+<body>
+  <h1>Timetable Viewer</h1>
+  <p>JSON Server file: <code>q5_db_timetable.json</code> (run on port <strong>3005</strong>)</p>
+  <label>Day: <select id="daySelect">
+    <option>Monday</option>
+    <option>Tuesday</option>
+    <option>Wednesday</option>
+    <option>Thursday</option>
+    <option>Friday</option>
+  </select></label>
+  <div id="output"></div>
+
+  <script src="q5_timetable.js"></script>
+</body>
+</html>

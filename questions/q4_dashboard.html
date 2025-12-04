@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q4 - Multi-API Dashboard (Fetch + Promise.all)</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:16px}
+    .card{display:inline-block;width:150px;height:80px;border:1px solid #ddd;margin:8px;padding:12px;vertical-align:top}
+    .skeleton{background:#eee;height:16px;margin:6px 0}
+    .warning{color:#b84545}
+  </style>
+</head>
+<body>
+  <h1>Multi-API Dashboard</h1>
+  <p>JSON Server file: <code>q4_db_multi.json</code> (run on port <strong>3004</strong>)</p>
+
+  <div id="warning" class="warning"></div>
+  <div id="cards">
+    <div class="card" id="usersCard"><div class="title">Users</div><div id="usersCount"><div class="skeleton"></div></div></div>
+    <div class="card" id="ordersCard"><div class="title">Orders</div><div id="ordersCount"><div class="skeleton"></div></div></div>
+    <div class="card" id="productsCard"><div class="title">Products</div><div id="productsCount"><div class="skeleton"></div></div></div>
+  </div>
+
+  <script src="q4_dashboard.js"></script>
+</body>
+</html>

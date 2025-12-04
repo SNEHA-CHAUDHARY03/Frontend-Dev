@@ -1,0 +1,9 @@
+{
+  "users": [
+    { "id": 1, "name": "Alice", "email": "alice@example.com", "password": "pass1234" },
+    { "id": 2, "name": "Bob", "email": "bob@example.com", "password": "secret123" },
+    { "id": 3, "name": "Carol", "email": "carol@example.com", "password": "pwdabc123" },
+    { "id": 4, "name": "David", "email": "david@example.com", "password": "davpass" },
+    { "id": 5, "name": "Eve", "email": "eve@example.com", "password": "evepass" }
+  ]
+}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q2 - Employee Status Dashboard</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:16px}
+    .row{display:flex;justify-content:space-between;padding:8px;border-bottom:1px solid #eee}
+    .error{color:#c0392b}
+  </style>
+</head>
+<body>
+  <h1>Employee Status Dashboard</h1>
+  <p>Uses JSON Server db file: <code>q2_db_employees.json</code> (run on port <strong>3002</strong>)</p>
+  <div id="error" class="error"></div>
+  <div id="list"></div>
+
+  <script src="q2_employees.js"></script>
+</body>
+</html>

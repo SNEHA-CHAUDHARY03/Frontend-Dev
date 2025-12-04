@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q3 - Task Manager (jQuery AJAX)</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .task{padding:8px;border-bottom:1px solid #eee;display:flex;justify-content:space-between}
+    .controls{margin-bottom:8px}
+  </style>
+</head>
+<body>
+  <h1>Task Manager</h1>
+  <p>Uses JSON Server db file: <code>q3_db_tasks.json</code> (run on port <strong>3003</strong>)</p>
+  <div class="controls">
+    <label>Filter: <select id="filter">
+      <option value="">All</option>
+      <option value="Low">Low Priority</option>
+      <option value="Medium">Medium Priority</option>
+      <option value="High">High Priority</option>
+      <option value="completed">Completed</option>
+    </select></label>
+  </div>
+  <div id="tasks"></div>
+
+  <script src="q3_tasks.js"></script>
+</body>
+</html>

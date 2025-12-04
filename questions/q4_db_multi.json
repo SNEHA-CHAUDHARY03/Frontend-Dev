@@ -1,0 +1,23 @@
+{
+  "users": [
+    { "id": 1, "name": "Alice" },
+    { "id": 2, "name": "Bob" },
+    { "id": 3, "name": "Carol" },
+    { "id": 4, "name": "David" },
+    { "id": 5, "name": "Eve" }
+  ],
+  "orders": [
+    { "id": 1, "total": 120.5 },
+    { "id": 2, "total": 45.0 },
+    { "id": 3, "total": 230.0 },
+    { "id": 4, "total": 15.75 },
+    { "id": 5, "total": 89.99 }
+  ],
+  "products": [
+    { "id": 1, "name": "Red Widget", "price": 29.99 },
+    { "id": 2, "name": "Blue Gadget", "price": 49.5 },
+    { "id": 3, "name": "Green Accessory", "price": 19.75 },
+    { "id": 4, "name": "Pro Device", "price": 99.0 },
+    { "id": 5, "name": "Nano Item", "price": 12.0 }
+  ]
+}
