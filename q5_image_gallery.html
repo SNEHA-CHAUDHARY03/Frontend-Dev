@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Q5 Image Gallery</title>
+  <style>
+    body{font-family:Arial;margin:16px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .grid img{width:100%;cursor:pointer}
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center}
+    .modal .box{background:#fff;padding:8px}
+    .hidden{display:none}
+  </style>
+</head>
+<body>
+  <h2>Q5 - Image Gallery with Modal</h2>
+  <div class="grid" id="gallery"></div>
+
+  <div id="modal" class="modal hidden">
+    <div class="box"><img id="modalImg" src="" style="max-width:80vw;max-height:80vh"></div>
+  </div>
+
+  <script src="q5_image_gallery.js"></script>
+</body>
+</html>

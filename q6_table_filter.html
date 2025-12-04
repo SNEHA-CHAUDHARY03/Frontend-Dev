@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Q6 Real-Time Table Filter</title>
+  <style>
+    body{font-family:Arial;margin:16px}
+    table{width:100%;border-collapse:collapse}
+    th,td{border:1px solid #ddd;padding:6px}
+    #nores{display:none;color:#d00;margin-top:8px}
+  </style>
+</head>
+<body>
+  <h2>Q6 - Real-Time Table Filter</h2>
+  <input id="search" placeholder="Search name or branch" />
+  <div id="nores">No results found</div>
+  <table id="students">
+    <thead><tr><th>Name</th><th>Branch</th><th>CGPA</th></tr></thead>
+    <tbody>
+      <tr><td>Amit</td><td>CSE</td><td>8.5</td></tr>
+      <tr><td>Sara</td><td>EEE</td><td>9.0</td></tr>
+      <tr><td>Kiran</td><td>ME</td><td>7.8</td></tr>
+      <tr><td>Lina</td><td>CSE</td><td>8.2</td></tr>
+    </tbody>
+  </table>
+  <script src="q6_table_filter.js"></script>
+</body>
+</html>
